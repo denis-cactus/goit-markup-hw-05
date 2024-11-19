@@ -604,20 +604,21 @@ section {
   align-items: center;
   justify-content: center;
 }
-.icon-close {
+.icon_close {
   width: 8px;
   height: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2e2f42;
 }
-.icon-close:hover,
-.icon-close:focus {
-  fill: #ffffff;
+
+.icon_close:focus, 
+.icon_close:hover {
+  fill: #fff;
 }
-.close:focus,
+.close:focus ,
 .close:hover {
-  fill: #ffffff;
   background-color: #404bbf;
+  border: none;
 }
 .modal-title {
   text-align: center;
