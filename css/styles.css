@@ -614,6 +614,7 @@ section {
 .close:focus,
 .close:hover {
   background-color: #404bbf;
+  border: none; 
 }
 .close:focus .icon_close,
 .close:hover .icon_close {
@@ -755,4 +756,5 @@ section {
 .input_check:checked + .label_checkbox .check-icon {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
