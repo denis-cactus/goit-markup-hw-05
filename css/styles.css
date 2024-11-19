@@ -578,7 +578,11 @@ section {
   width: 408px;
   min-height: 584px;
   overflow-y: auto;
-  position: relative;
+  position: absolute;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal > .close {
   position: absolute;
@@ -625,8 +629,12 @@ section {
   letter-spacing: 0.32px;
   margin-bottom: 16px;
 }
+
 .form-container {
   margin-bottom: 8px;
+}
+.last {
+  margin-bottom: 16px;
 }
 
 .modal_label {
@@ -717,17 +725,17 @@ section {
   color: #4d5ae5;
 }
 .submit-btn {
-  display: block; 
+  display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
