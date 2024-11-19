@@ -580,7 +580,7 @@ section {
   overflow-y: auto;
   position: absolute;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -611,13 +611,13 @@ section {
   fill: #2e2f42;
 }
 
-.icon_close:focus, 
-.icon_close:hover {
-  fill: #fff;
-}
-.close:focus ,
+.close:focus,
 .close:hover {
   background-color: #404bbf;
+}
+.close:focus .icon_close,
+.close:hover .icon_close {
+  fill: #ffffff;
   border: none;
 }
 .modal-title {
@@ -651,6 +651,7 @@ section {
   position: relative;
 }
 .label_checkbox {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -724,6 +725,10 @@ section {
 }
 .link-checkbox {
   color: #4d5ae5;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 400;
+  text-decoration: underline;
 }
 .submit-btn {
   display: block;
@@ -741,4 +746,13 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   margin: 0 auto;
+}
+.modal-icon-check {
+  width: 10px;
+  height: 8px;
+  fill: #f4f4fd;
+}
+.input_check:checked + .label_checkbox .check-icon {
+  background-color: #404bbf;
+  border: none;
 }
